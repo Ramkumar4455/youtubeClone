@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="forfb.css">
+<style>
+        .outer{
+            margin-top: 30px;
+            margin-left: 500px;
+            border-radius: 5px;
+            width: 500px;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 10px;
+            border: none;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.25);
+        }
+       
+    .pic1 {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      vertical-align: middle;
+    }
+    .text-box {
+        margin-left: 10px;
+  font-size: 18px;
+  border: none;
+  width: 300px;
+  vertical-align: middle;
+}
+.tweet{
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    border-radius: 20px;
+    background-color: rgb(0, 191, 255);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:  opacity 0.5s,color 0.5s,background-color 0.5s;
+}
+.tweet:hover{
+         
+         opacity: 0.7;
+         
+    }
+.tweet:active{
+color:  rgb(61, 168, 255);
+background-color: white;
+}
+
+.page1{
+    margin-top: 100px;
+    margin-left: 300px;
+    display: inline-block;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.20);
+   padding-bottom: 20px;
+    width: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+}
+.pic2{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 0px;
+}
+.name{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+}
+.mutual{
+    margin-top: 4px;
+    margin-left: 5px;
+   margin-bottom: 3px;
+   color: rgb(158, 158, 158);
+}
+.addfriend{
+    text-align: center;
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 191, 255);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:  opacity 0.5s,color 0.5s,background-color 0.5s;
+}
+.addfriend:hover{
+         
+         opacity: 0.7;
+         
+    }
+.addfriend:active{
+color:  rgb(61, 168, 255);
+background-color: white;
+}
+
+
+.page2{
+    margin-top: 100px;
+    margin-left: 30px;
+    display: inline-block;
+    box-shadow: 2px 5px 15px rgba(0,0,0,0.20);
+   padding-bottom: 20px;
+    width: 200px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 2px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+}
+
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 10px;
+   
+}
+
+.pfp{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+   
+}
+.info{
+    width: 250px;
+
+}
+p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name1{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    
+}
+.nickname{
+    margin-bottom: 3px;
+    color: rgb(158, 158, 158);
+}
+.popularity{
+    color: rgb(158, 158, 158);
+}
+.button{
+    margin-right: 10px;
+}
+.follow-button{
+    text-align: center;
+
+    padding-left: 40px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 40px;
+    border-radius: 10px;
+    background-color: rgb(0, 191, 255);
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:  opacity 0.5s,color 0.5s,background-color 0.5s;
+    
+}
+.follow-button:hover{
+         
+         opacity: 0.7;
+         
+    }
+.follow-button:active{
+color:  rgb(61, 168, 255);
+background-color: white;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 5px;
+}
+.search{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(147, 44, 244);
+}
+.home{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding-left: 15px;
+    width: 250px;
+}
+
+.searchbar{
+    border: none;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 16px;
+                width: 550px;
+                border-radius: 30px;
+                box-shadow: 0 1px 6px rgba(0, 0, 0, 0.2);
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-right: 100px;
+    
+   
+}
+
+.searching{
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-right: 10px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(147, 44, 244);
+    border: 2px solid white;
+    cursor: pointer;
+    transition: color 0.5s, background-color 0.5s,border 0.5s;
+}
+.searching:hover{
+    color: rgb(147, 44, 244) ;
+    background-color: white;
+    border: 2px solid rgb(74, 0, 144);
+}
+.searching:active{
+    color: white;
+    background-color: rgb(74, 0, 144);
+    border: 2px solid white;
+}
+
+
+.forcenter{
+    margin-top: 10px;
+    width: 400px;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+   
+}
+.profiles{
+    margin-top: 4px;
+  
+    margin-right: 40px;
+}
+.inbox{
+    margin-left: 10px;
+
+    width: 100%;
+}
+.name1{
+    margin-bottom: 4px;
+}
+.time{
+    
+    display: flex;
+    justify-content: space-between;
+   
+}
+.msg-grid{
+    padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.about-msg{
+   margin-bottom: 3px;
+   color: rgb(139, 139, 139);
+}
+.msg-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+</style>
+
+</head>
+<body style="margin-bottom: 1000px; margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+<div class="search">
+    <p class="home">Home</p>
+    <input type="text" placeholder="Search" class="searchbar">
+    
+    <button class="searching"> Search</button>
+
+</div>
+
+<div class="outer">
+
+  
+            
+    <img class="pic1" src="thumbnails/zoro1.jpg">
+   
+    
+    <input type="text" class="text-box" placeholder="What's happening?">
+    
+    <button class="tweet">Tweet</button>
+</div>
+
+
+
+<div class="page1">
+    <img class="pic2" src="thumbnails/zorof.jpg" style="object-position: center;">
+    <p class="name">Roronoa Zoro</p>
+    <p class="mutual">2 mutual friends</p>
+    <button class="addfriend">Add Friend</button>
+</div>
+<div class="page2">
+    <img class="pic2" src="thumbnails/TCDBECA_IZ056.webp">
+    <p class="name">Lalo Salamanca</p>
+    <p class="mutual">7 mutual friends</p>
+    <button class="addfriend">Add Friend</button>
+</div>
+<div class="page2">
+    <img class="pic2" src="thumbnails/images.jpeg" style="object-position: top;">
+    <p class="name">Cristiano Ronaldo</p>
+    <p class="mutual">7M mutual friends</p>
+    <button class="addfriend">Add Friend</button>
+</div>
+<div class="page2">
+    <img class="pic2" src="thumbnails/negan.jpg" style="object-position: center;">
+    <p class="name">Negan Smith</p>
+    <p class="mutual">8 mutual friends</p>
+    <button class="addfriend">Add Friend</button>
+</div>
+
+      
+
+
+    <div class="top">
+        <div class="check">
+      <div class="profile">
+            <img class="pfp"  src="thumbnails/channels4_profile (1).jpg" class="profile-picture" >
+        </div>
+        <div class="info">
+            <p class="name1">Cristiano Ronaldo</p>
+            <p class="nickname">CR7</p>
+            <p class="popularity">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow-button"> Follow</button>
+        </div>
+    </div>
+   
+
+    </div>
+    <div class="top">
+        <div class="check">
+      <div class="profile">
+            <img class="pfp"  src="thumbnails/channels4_profile (1).jpg" class="profile-picture" >
+        </div>
+        <div class="info">
+            <p class="name1">Cristiano Ronaldo</p>
+            <p class="nickname">CR7</p>
+            <p class="popularity">Popular</p>
+        </div>
+        <div class="button">
+            <button class="follow-button"> Follow</button>
+        </div>
+    </div>
+   
+
+    </div>
+</div>
+<div class="top">
+    <div class="check">
+  <div class="profile">
+        <img class="pfp"  src="thumbnails/channels4_profile (1).jpg" class="profile-picture" >
+    </div>
+    <div class="info">
+        <p class="name1">Cristiano Ronaldo</p>
+        <p class="nickname">CR7</p>
+        <p class="popularity">Popular</p>
+    </div>
+    <div class="button">
+        <button class="follow-button"> Follow</button>
+    </div>
+
+</div >
+
+
+</div>
+
+
+    
+        <div class="msg-grid">
+            <p class="popularity" style="margin-bottom: 20px;">ALL INBOXES</p>
+           <div class="forcenter">
+                        <div class="profiles">
+                            <img class="msg-icon"  src="thumbnails/koh.webp" class="profile-picture" >
+                        </div>
+                        <div class="inbox">
+                                <div class="time">
+                                    <p class="name1"> King Baldwin IV</p>
+                                    <p class="about-msg">4:58 PM</p>
+                                </div>
+                                <p class="about-msg">The Greatest Of All Time </p>
+                                <p class="about-msg">  When I was 16 I won a great victory I felt in that...</p>
+                        </div>
+           </div>
+
+           <div class="forcenter">
+            <div class="profiles">
+                <img class="msg-icon"  src="thumbnails/koh.webp" class="profile-picture" >
+            </div>
+            <div class="inbox">
+                    <div class="time">
+                        <p class="name1"> King Baldwin IV</p>
+                        <p class="about-msg">4:58 PM</p>
+                    </div>
+                    <p class="about-msg">The Greatest Of All Time </p>
+                    <p class="about-msg">  When I was 16 I won a great victory I felt in that...</p>
+            </div>
+    </div>
+
+    <div class="forcenter">
+        <div class="profiles">
+            <img class="msg-icon"  src="thumbnails/koh.webp" class="profile-picture" >
+        </div>
+        <div class="inbox">
+                <div class="time">
+                    <p class="name1"> King Baldwin IV</p>
+                    <p class="about-msg">4:58 PM</p>
+                </div>
+                <p class="about-msg">The Greatest Of All Time </p>
+                <p class="about-msg">  When I was 16 I won a great victory I felt in that...</p>
+        </div>
+</div>
+
+
+
+          
+    
+</div>
+
+<div class="end">
+<div class="yt">
+    <div class="proff">
+        <img class="msg-icon"  src="icons/3vxvsmYLTf4jnr163SUlBIw51ee.jpg" class="proff-icon" style="object-position: top;">
+    </div>
+    <div class="link">
+        <div class="paras">
+            <p class="name1">ana de armas <span style="color: rgb(183, 183, 183); font-size: medium; font-weight: lighter;">@AnaDeArmas</span> </p>
+            <p>You look lonely I can fix that</p>
+        </div>
+        <div class="youtube-link">
+                <div class="first">
+                      
+                </div>
+                <div class="second"> 
+                    <p style="margin-top: 10px; margin-left: 10px;"> <a href="https://youtu.be/qExENUg1JBg?si=x7FhbqWWaxIGWpyx" class="com"> youtube.com</a></p>
+                    <p class="ana">Ana De Armas[Edit]Blade Runner 2049
+
+                    </p> 
+                
+            </div>
+        </div>
+        
+    </div>
+</div>
+</div>
+  
+
+        
+    </body>
+    </html>

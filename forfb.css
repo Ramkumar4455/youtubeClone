@@ -1,0 +1,50 @@
+.yt{
+    margin-top: 30px;
+    display: flex;
+    width: 400px;
+  margin-left: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  
+}
+.end{
+    display: flex;
+    justify-content: end;
+}
+.youtube-link{
+    flex: 1;
+    margin-top: 7px;
+    display: flex;
+  
+}
+.link{
+    flex: 1;
+}
+.first{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(201, 201, 201);
+  
+    border-radius: 5px;
+}
+.second{
+    flex: 1;
+   border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    margin-left: -5px;
+    margin-right: 10px;
+}
+.com{
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(119, 119, 119);
+    font-weight: bold;
+    text-decoration:none;
+}
+
+.ana{
+    margin-left: 20px;
+    margin-top: 7px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+}
